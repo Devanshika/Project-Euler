@@ -6,7 +6,7 @@ namespace Project_Euler
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            ProjectEuler_1.ClassDriver();
         }
     }
 }
