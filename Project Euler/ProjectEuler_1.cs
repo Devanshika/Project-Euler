@@ -21,7 +21,14 @@ namespace Project_Euler
         }
         static void Solution(int n)
         {
+            long sum = 0;
+            long numMult3 = (n - 1) / 3;
+            long numMult5 = (n - 1) / 5;
+            long numMult15 = (n - 1) / 15;
 
+            sum = (3 * ((numMult3 * (numMult3 + 1)) / 2) + 5 * ((numMult5 * (numMult5 + 1)) / 2) - 15 *
+                ((numMult15 * (numMult15 + 1)) / 2));
+            Console.WriteLine(sum);
         }
     }
 }
